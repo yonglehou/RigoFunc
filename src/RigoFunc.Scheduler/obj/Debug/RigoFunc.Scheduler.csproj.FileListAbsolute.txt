@@ -1,0 +1,5 @@
+D:\GitHub\RigoFunc\src\bin\Debug\RigoFunc.Scheduler.dll
+D:\GitHub\RigoFunc\src\bin\Debug\RigoFunc.Scheduler.pdb
+D:\GitHub\RigoFunc\src\RigoFunc.Scheduler\obj\Debug\RigoFunc.Scheduler.dll
+D:\GitHub\RigoFunc\src\RigoFunc.Scheduler\obj\Debug\RigoFunc.Scheduler.pdb
+D:\GitHub\RigoFunc\src\RigoFunc.Scheduler\obj\Debug\RigoFunc.Scheduler.csprojResolveAssemblyReference.cache

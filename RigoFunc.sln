@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5151FA86-9407-425C-B78E-0DF4374A3D2B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{AC683127-D84B-40FB-A7C6-89FEDCBBC069}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RigoFunc.Scheduler", "src\RigoFunc.Scheduler\RigoFunc.Scheduler.csproj", "{893A6818-B195-4C0A-96B1-F5D36D1E3B67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RigoFunc.Scheduler.Tests", "test\RigoFunc.Scheduler.Tests\RigoFunc.Scheduler.Tests.csproj", "{8261D4AE-D538-4A95-8036-FF461EE967A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RigoFunc.Graph", "src\RigoFunc.Graph\RigoFunc.Graph.csproj", "{E3422953-7342-4E2C-820A-5E4D6FCDE802}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RigoFunc.Render", "src\RigoFunc.Render\RigoFunc.Render.csproj", "{FD6639A7-91FC-4A44-9A5B-A14C0B0818CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RigoFunc.Utils", "src\RigoFunc.Utils\RigoFunc.Utils.csproj", "{BCA95BD2-B46A-4CF4-9009-905BA68C8275}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RigoFunc.WFC", "src\RigoFunc.WFC\RigoFunc.WFC.csproj", "{6E7E3DFF-424D-423D-9154-CED1CBE13B9F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{893A6818-B195-4C0A-96B1-F5D36D1E3B67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{893A6818-B195-4C0A-96B1-F5D36D1E3B67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{893A6818-B195-4C0A-96B1-F5D36D1E3B67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{893A6818-B195-4C0A-96B1-F5D36D1E3B67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8261D4AE-D538-4A95-8036-FF461EE967A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8261D4AE-D538-4A95-8036-FF461EE967A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8261D4AE-D538-4A95-8036-FF461EE967A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8261D4AE-D538-4A95-8036-FF461EE967A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3422953-7342-4E2C-820A-5E4D6FCDE802}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3422953-7342-4E2C-820A-5E4D6FCDE802}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3422953-7342-4E2C-820A-5E4D6FCDE802}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3422953-7342-4E2C-820A-5E4D6FCDE802}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD6639A7-91FC-4A44-9A5B-A14C0B0818CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD6639A7-91FC-4A44-9A5B-A14C0B0818CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD6639A7-91FC-4A44-9A5B-A14C0B0818CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD6639A7-91FC-4A44-9A5B-A14C0B0818CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCA95BD2-B46A-4CF4-9009-905BA68C8275}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCA95BD2-B46A-4CF4-9009-905BA68C8275}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCA95BD2-B46A-4CF4-9009-905BA68C8275}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCA95BD2-B46A-4CF4-9009-905BA68C8275}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E7E3DFF-424D-423D-9154-CED1CBE13B9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E7E3DFF-424D-423D-9154-CED1CBE13B9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E7E3DFF-424D-423D-9154-CED1CBE13B9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E7E3DFF-424D-423D-9154-CED1CBE13B9F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{893A6818-B195-4C0A-96B1-F5D36D1E3B67} = {5151FA86-9407-425C-B78E-0DF4374A3D2B}
+		{8261D4AE-D538-4A95-8036-FF461EE967A0} = {AC683127-D84B-40FB-A7C6-89FEDCBBC069}
+		{E3422953-7342-4E2C-820A-5E4D6FCDE802} = {5151FA86-9407-425C-B78E-0DF4374A3D2B}
+		{FD6639A7-91FC-4A44-9A5B-A14C0B0818CB} = {5151FA86-9407-425C-B78E-0DF4374A3D2B}
+		{BCA95BD2-B46A-4CF4-9009-905BA68C8275} = {5151FA86-9407-425C-B78E-0DF4374A3D2B}
+		{6E7E3DFF-424D-423D-9154-CED1CBE13B9F} = {5151FA86-9407-425C-B78E-0DF4374A3D2B}
+	EndGlobalSection
+EndGlobal

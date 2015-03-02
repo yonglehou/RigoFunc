@@ -1,0 +1,5 @@
+D:\GitHub\RigoFunc\src\bin\Debug\RigoFunc.Graph.dll
+D:\GitHub\RigoFunc\src\bin\Debug\RigoFunc.Graph.pdb
+D:\GitHub\RigoFunc\src\RigoFunc.Graph\obj\Debug\RigoFunc.Graph.dll
+D:\GitHub\RigoFunc\src\RigoFunc.Graph\obj\Debug\RigoFunc.Graph.pdb
+D:\GitHub\RigoFunc\src\RigoFunc.Graph\obj\Debug\RigoFunc.Graph.csprojResolveAssemblyReference.cache

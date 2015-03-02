@@ -1,6 +1,6 @@
 RigoFunc
 ===
-This repository contains the reusable, flexible, scalable libraries that written in my spare time. 
+This repository contains some reusable, flexible, scalable libraries that written in my spare time. 
 
 # Introduction
 

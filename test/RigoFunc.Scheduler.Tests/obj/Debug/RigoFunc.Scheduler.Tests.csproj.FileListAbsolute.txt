@@ -1,0 +1,5 @@
+D:\GitHub\RigoFunc\test\bin\Debug\RigoFunc.Scheduler.Tests.dll
+D:\GitHub\RigoFunc\test\bin\Debug\RigoFunc.Scheduler.Tests.pdb
+D:\GitHub\RigoFunc\test\RigoFunc.Scheduler.Tests\obj\Debug\RigoFunc.Scheduler.Tests.csprojResolveAssemblyReference.cache
+D:\GitHub\RigoFunc\test\RigoFunc.Scheduler.Tests\obj\Debug\RigoFunc.Scheduler.Tests.dll
+D:\GitHub\RigoFunc\test\RigoFunc.Scheduler.Tests\obj\Debug\RigoFunc.Scheduler.Tests.pdb
