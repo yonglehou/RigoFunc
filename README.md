@@ -1,10 +1,10 @@
 RigoFunc
 ===
-This repository contains some reusable, flexible, scalable libraries that written in my spare time. 
+This repo contains some reusable, flexible, scalable libraries that written in my spare time. 
 
 # Introduction
 
-This repository contains following components:
+This repo contains following components:
 - **RigoFunc.Render**.
 - **RigoFunc.Graph**
 - **RigoFunc.Scheduler**.
@@ -34,10 +34,10 @@ Figure 1 The RigoFunc.Render component demo
 # RigoFunc.Graph
 
 The **RigoFunc.Graph** library is a reusable, flexible, scalable graph algorithm component, has following functionality
-- DFS visit graph vertiex.
-- BFS visit graph vertiex.
-- Topology Sort.
-- Merge [Indegree = 1 && Outdegree = 1) vertiex.
+- DFS visit graph vertices.
+- BFS visit graph vertices.
+- Topology sort of graph vertices.
+- Merge [Indegree = 1 && Outdegree = 1) vertices.
 - More...
 
 ![Figure 2](images/graph-fig1.png)
