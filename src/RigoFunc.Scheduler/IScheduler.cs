@@ -23,7 +23,7 @@ namespace RigoFunc.Scheduler {
 
         /// <summary>
         /// Registers a new callback to this <see cref="IScheduler"/>.
-        /// If the <see cref="Register<T>(Action<T> callback, T parameter)"/> had been registered, 
+        /// If the <see cref="Register(Action<object> callback, object parameter)"/> had been registered, 
         /// the callback of the current method would be ignored.
         /// </summary>
         /// <param name="callback">The callback to register.</param>

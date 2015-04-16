@@ -8,20 +8,13 @@ namespace RigoFunc.Scheduler {
     using System.Threading;
 
     /// <summary>
-    /// Represents the manager which manages and schedules the tasks in multi-thread.
+    /// Provides the default implementation of the <see cref="ISchedulerManager"/>, which manages and schedules the tasks in multi-thread.
     /// </summary>
-    public class MultithreadSchedulerManager : SchedulerManagerBase {
-        private bool _IsScheduling;
-
-        private object _SyncLock;
-
-        private Dictionary<string, IScheduler> _Schedulers;
-
+    public class DefaultSchedulerManager : SchedulerManagerBase {
         /// <summary>
-        /// Initializes a new instance of the <see cref="MultithreadSchedulerManager"/> class.
+        /// Initializes a new instance of the <see cref="DefaultSchedulerManager"/> class.
         /// </summary>
-        public MultithreadSchedulerManager() {
-            _IsScheduling = false;
+        public DefaultSchedulerManager() {
             _SyncLock = new object();
             _Schedulers = new Dictionary<string, IScheduler>();
         }
@@ -74,20 +67,9 @@ namespace RigoFunc.Scheduler {
         }
 
         /// <summary>
-        /// Starts the scheduler main thread and schedules all schedulers.
+        /// Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
         /// </summary>
-        public override void Start() {
-            // change flag
-            _IsScheduling = true;
-        }
-
-        /// <summary>
-        /// Stops the scheduler main thread.
-        /// </summary>
-        public override void Stop() {
-            // change flag
-            _IsScheduling = false;
-
+        public override void Dispose() {
             // recycle all allocated schedulers
             lock (_SyncLock) {
                 if (_Schedulers.Count > 0) {
@@ -125,18 +107,16 @@ namespace RigoFunc.Scheduler {
             }
         }
 
+        #region Private Members
+
         private void SchedulerExecHandler(object parameter) {
             var context = parameter as SchedulerContext;
             if (context == null)
                 return;
 
             var stopwatch = new Stopwatch();
-            TimeSpan interval = TimeSpan.Zero;
-            while (_IsScheduling) {
-                // if the context is disposed, break the iteration
-                if (context.IsDisposed)
-                    break;
-
+            var interval = TimeSpan.Zero;
+            while (!context.IsDisposed) {
                 try {
                     // check active state and run
                     if (context.SchedulerState == SchedulerState.Active) {
@@ -179,5 +159,11 @@ namespace RigoFunc.Scheduler {
                 }
             }
         }
+
+        private object _SyncLock;
+
+        private readonly Dictionary<string, IScheduler> _Schedulers;
+
+        #endregion
     }
 }

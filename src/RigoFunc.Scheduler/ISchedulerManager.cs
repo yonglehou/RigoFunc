@@ -7,7 +7,7 @@ namespace RigoFunc.Scheduler {
     /// <summary>
     /// Provides the interfaces for manages all the schedulers derived from <see cref="IScheduler"/>.
     /// </summary>
-    public interface ISchedulerManager {
+    public interface ISchedulerManager : IDisposable {
         /// <summary>
         /// Occurs when the scheduler dispatching is timeout.
         /// </summary>
@@ -40,15 +40,5 @@ namespace RigoFunc.Scheduler {
         /// </summary>
         /// <param name="schedulerName">The name of the scheduler to recycle.</param>
         void RecycleScheduler(string schedulerName);
-
-        /// <summary>
-        /// Starts the scheduler dispatch thread and schedules all schedulers.
-        /// </summary>
-        void Start();
-
-        /// <summary>
-        /// Stops the scheduler dispatch thread.
-        /// </summary>
-        void Stop();
     }
 }

@@ -58,24 +58,14 @@ namespace RigoFunc.Scheduler {
         public TimeSpan ScheduleElapsed { get; set; }
 
         /// <summary>
-        /// Registers the specified callback.
+        /// Registers a new callback to this <see cref="IScheduler"/>.
+        /// If the <see cref="Register(Action<object> callback, object parameter)"/> had been registered, 
+        /// the callback of the current method would be ignored.
         /// </summary>
-        /// <param name="callback">The callback.</param>
+        /// <param name="callback">The callback to register.</param>
         public void Register(Action callback) {
             if (_context != null)
                 _context.Register(callback);
-        }
-
-        /// <summary>
-        /// Registers a new callback to this <see cref="IScheduler" />.
-        /// If this callback had been registered, the callback registered by the
-        /// <see cref="Register(Action callback)" /> method would be ignored.
-        /// </summary>
-        /// <typeparam name="T">The type of the parameter.</typeparam>
-        /// <param name="callback">The callback to register.</param>
-        /// <param name="parameter">The parameter to be registered with the callback.</param>
-        public void Register<T>(Action<T> callback, T parameter) {
-            
         }
 
         /// <summary>

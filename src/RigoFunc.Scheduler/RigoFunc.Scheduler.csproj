@@ -36,7 +36,7 @@
   <ItemGroup>
     <Compile Include="IScheduler.cs" />
     <Compile Include="ISchedulerManager.cs" />
-    <Compile Include="MultithreadSchedulerManager.cs" />
+    <Compile Include="DefaultSchedulerManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scheduler.cs" />
     <Compile Include="SchedulerContext.cs" />

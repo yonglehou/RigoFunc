@@ -56,14 +56,9 @@ namespace RigoFunc.Scheduler {
         }
 
         /// <summary>
-        /// Starts the scheduler dispatch thread and schedules all schedulers.
+        /// Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
         /// </summary>
-        public abstract void Start();
-
-        /// <summary>
-        /// Stops the scheduler dispatch thread.
-        /// </summary>
-        public abstract void Stop();
+        public abstract void Dispose();
 
         /// <summary>
         /// Recycles the specified scheduler. This method is for internal usage only.
