@@ -10,8 +10,7 @@ namespace RigoFunc.Scheduler.Tests {
 
         [TestInitialize]
         public void Initialize() {
-            schedulerMgr = new MultithreadSchedulerManager();
-            schedulerMgr.Start();
+            schedulerMgr = new DefaultSchedulerManager();
         }
 
         [TestMethod]
