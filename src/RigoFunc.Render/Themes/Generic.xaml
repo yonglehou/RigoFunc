@@ -1,18 +1,81 @@
 ﻿<ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="clr-namespace:RigoFunc.Render">
-    <Style TargetType="{x:Type local:CustomControl1}">
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    xmlns:local="clr-namespace:RigoFunc.Render"
+    xmlns:ctrl="clr-namespace:RigoFunc.Render.Controls"
+    xmlns:chrome="clr-namespace:RigoFunc.Render.Chromes"
+    xmlns:decorator="clr-namespace:RigoFunc.Render.Decorators"
+    xmlns:converter="clr-namespace:RigoFunc.Render.Converters">
+
+
+    <Style TargetType="{x:Type ctrl:RulerContainer}">
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type local:CustomControl1}">
-                    <Border Background="{TemplateBinding Background}"
-                            BorderBrush="{TemplateBinding BorderBrush}"
-                            BorderThickness="{TemplateBinding BorderThickness}">
+                <ControlTemplate TargetType="{x:Type ctrl:RulerContainer}">
+                    <Grid x:Name="RootPart">
+                        <Canvas x:Name="RulerPart" />
+                        <Grid x:Name="InnerGridPart">
 
-                    </Border>
+                            <!-- Copyright (c) -->
+                            <TextBlock Text="Copyright (c) xu.yingting! All rights reserved." 
+                                       TextWrapping="Wrap" 
+                                       TextAlignment="Center"
+                                       FontStyle="Italic" 
+                                       FontWeight="Bold" 
+                                       FontSize="36"
+                                       HorizontalAlignment="Center" 
+                                       VerticalAlignment="Center" 
+                                       Opacity="0.2" />
+
+                            <Grid x:Name="GridLinesPart" />
+
+                            <ContentPresenter Content="{TemplateBinding Content}"
+                                              ContentTemplate="{Binding ContentTemplate}"
+                                              Margin="{TemplateBinding Padding}"
+                                              HorizontalAlignment="Stretch"
+                                              VerticalAlignment="Stretch" />
+                        </Grid>
+                    </Grid>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
     </Style>
+
+
+    <Style TargetType="{x:Type ctrl:SplitContainer}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ctrl:SplitContainer}">
+                    <Grid>
+                        <!-- Default Orientation is Horizontal -->
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition x:Name="PART_ColDef1" Width="*" MinWidth="100" />
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition x:Name="PART_ColDef2" Width="2*" MinWidth="100" />
+                        </Grid.ColumnDefinitions>
+
+                        <!-- Alternative Orientation is Vertical-->
+                        <Grid.RowDefinitions>
+                            <RowDefinition x:Name="PART_RowDef1" Height="*" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition x:Name="PART_RowDef2" Height="0" />
+                        </Grid.RowDefinitions>
+
+                        <Grid Name="PART_Grid1" Grid.Row="0" Grid.Column="0">
+                            <ContentPresenter Content="{TemplateBinding Child1}" />
+                        </Grid>
+
+                        <Thumb Name="PART_Thumb" Grid.Row="0" Grid.Column="1" Width="6" Margin="4" />
+
+                        <Grid Name="PART_Grid2" Grid.Row="0" Grid.Column="2">
+                            <ContentPresenter Content="{TemplateBinding Child2}" />
+                        </Grid>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
 </ResourceDictionary>

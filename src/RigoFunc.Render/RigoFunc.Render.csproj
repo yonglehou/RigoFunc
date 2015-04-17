@@ -52,6 +52,12 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Chromes\ResizeChrome.cs" />
+    <Compile Include="Chromes\ResizeRotateChrome.cs" />
+    <Compile Include="Controls\RulerContainer.cs" />
+    <Compile Include="Controls\SplitContainer.cs" />
+    <Compile Include="Converters\DoubleRoundConverter.cs" />
+    <Compile Include="Core\ViewModelBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -65,6 +71,11 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Adorners\" />
+    <Folder Include="Assets\" />
+    <Folder Include="Decorators\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
