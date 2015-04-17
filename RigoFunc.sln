@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5151FA86-9407-425C-B78E-0DF4374A3D2B}"
 EndProject
@@ -18,6 +18,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RigoFunc.Utils", "src\RigoFunc.Utils\RigoFunc.Utils.csproj", "{BCA95BD2-B46A-4CF4-9009-905BA68C8275}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RigoFunc.WFC", "src\RigoFunc.WFC\RigoFunc.WFC.csproj", "{6E7E3DFF-424D-423D-9154-CED1CBE13B9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RigoFunc.SMS.Net", "src\RigoFunc.SMS.Net\RigoFunc.SMS.Net.csproj", "{5121A621-1F41-4A80-A1D1-5FAC15E2AA38}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +51,10 @@ Global
 		{6E7E3DFF-424D-423D-9154-CED1CBE13B9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E7E3DFF-424D-423D-9154-CED1CBE13B9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E7E3DFF-424D-423D-9154-CED1CBE13B9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5121A621-1F41-4A80-A1D1-5FAC15E2AA38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5121A621-1F41-4A80-A1D1-5FAC15E2AA38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5121A621-1F41-4A80-A1D1-5FAC15E2AA38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5121A621-1F41-4A80-A1D1-5FAC15E2AA38}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,5 +66,6 @@ Global
 		{FD6639A7-91FC-4A44-9A5B-A14C0B0818CB} = {5151FA86-9407-425C-B78E-0DF4374A3D2B}
 		{BCA95BD2-B46A-4CF4-9009-905BA68C8275} = {5151FA86-9407-425C-B78E-0DF4374A3D2B}
 		{6E7E3DFF-424D-423D-9154-CED1CBE13B9F} = {5151FA86-9407-425C-B78E-0DF4374A3D2B}
+		{5121A621-1F41-4A80-A1D1-5FAC15E2AA38} = {5151FA86-9407-425C-B78E-0DF4374A3D2B}
 	EndGlobalSection
 EndGlobal
