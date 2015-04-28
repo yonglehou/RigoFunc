@@ -1,0 +1,15 @@
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+*.GhostDoc.xml
+
+*.log
+
+# Build results
+src/bin/
+test/bin/
+
+# vim temp
+*~
